@@ -15,7 +15,7 @@ body {
   background-color: $color_mercury;
 }
 .search {
-  margin: 20px 10%;
+  margin: 15px 10%;
   position:relative;
   &__header {
     padding: 25px;
@@ -41,21 +41,18 @@ body {
   &__content {
     border: none;
     margin: 0px;
-    position:absolute;
     border:1px solid $color_martinique;
     background-color: $color_white;
+    position:absolute;
     &--row {
-      padding: 0px 20px;
+      padding: 0px 15px;
       display: -webkit-flex;
       display: flex;
       flex-wrap:  wrap;
       &__item{
         -webkit-flex: initial;
         flex: initial;
-        min-width: 300px;
-      }
-      &__item:first-child{
-        min-width: 250px;
+        min-width: 240px;
       }
     }
   }
