@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Search UI Widget - Developed by Syed Hussain">
+    <meta name="author" content="Syed Hussain">
+    <title>Search UI Widgit</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- AngularJS controller,components and service-->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="components/app.js"></script>
+    <script src="components/search.component.js"></script>
+    <script src="services/data.service.js"></script>
+  </head>
+
+  <body ng-app="myApp">
+    <div ng-controller="MainCtrl as ctrl">
+      <search-component client-list="ctrl.clientList" filter-data="ctrl.filterCustomer(value)"></search-component>
+    </div>
+  </body>
+</html>

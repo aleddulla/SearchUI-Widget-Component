@@ -1,0 +1,20 @@
+
+  <div class="search">
+    <div class="search__header">
+      <i class="fa fa-search"></i>&nbsp;
+        <input class="search__header--input" ng-model="$ctrl.searchKey" placeholder="SEARCH (Client Name / Policy Number)" type="text" ng-keyup="$ctrl.filterData({value:$ctrl.searchKey})">
+    </div>
+    <!-- Table -->
+    <table class="table table-striped search__content" ng-if="$ctrl.clientList.length>0">
+      <tr ng-repeat="rowData in $ctrl.clientList"><td>
+        <div class="search__content--row search__text">
+          <div class="search__text--primary">{{rowData.clientName}}</div>
+        </div>
+        <div class="search__content--row search__text">
+          <div class="search__content--row__item search__text--secondary"><i class="fa fa-phone"></i> {{rowData.phone}}</div>
+          <div class="search__content--row__item search__text--secondary"><i class="fa fa-envelope"></i> {{rowData.email}}</div>
+          <div class="search__content--row__item search__text--secondary"><i class="fa fa-file-text"></i> Policy No. {{rowData.policyNumber}}</div>
+        </div>
+      </td></tr>
+    </table>
+  </div>

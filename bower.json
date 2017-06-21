@@ -1,0 +1,10 @@
+{
+  "name": "SearchUIWidget",
+  "version": "1.0",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "angular": "latest",
+    "fontawesome": "latest",
+  },
+  "private": true
+}
