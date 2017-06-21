@@ -4,7 +4,7 @@
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
     "angular": "latest",
-    "fontawesome": "latest",
+    "fontawesome": "latest"
   },
   "private": true
 }
